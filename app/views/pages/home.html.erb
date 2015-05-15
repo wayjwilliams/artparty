@@ -8,7 +8,7 @@
       <h2 class="text-center">Basic Membership</h2>
       <h4>Free and Basic Access to the ArtParty Community</h4>
       <br />
-      <%= link_to "Basic Sign Up", new_user_registration_path, class: "btn btn-primary btn-lg btn-block" %>
+      <%= link_to "Basic Sign Up", new_user_registration_path(plan: @basic_plan.id), class: "btn btn-primary btn-lg btn-block" %>
     </div>
   </div>
   <div class="col-md-6">
@@ -16,7 +16,7 @@
       <h2 class="text-center">Premium Membership</h2>
       <h4>Premium account for all the goods! Just $10/month!</h4>
       <br />
-      <%= link_to "Cough Up The Cash", new_user_registration_path, class: "btn btn-success btn-lg btn-block" %>
+      <%= link_to "Cough Up The Cash", new_user_registration_path(plan: @premium_plan.id), class: "btn btn-success btn-lg btn-block" %>
     </div>
   </div>
 </div>

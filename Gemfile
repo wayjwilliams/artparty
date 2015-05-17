@@ -24,7 +24,7 @@ gem 'jbuilder', '~> 2.0'
 gem 'sdoc', '~> 0.4.0', group: :doc
 
 gem 'bootstrap-sass', '~> 3.3.4.1'
-gem 'rails_12factor'
+gem 'rails_12factor', group: :production
 gem 'font-awesome-sass'
 gem 'devise', '~> 3.4.1'
 gem 'stripe', '~> 1.21.0'

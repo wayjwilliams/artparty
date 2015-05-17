@@ -38,9 +38,9 @@ ActiveRecord::Schema.define(version: 20150517182203) do
     t.string   "job_title"
     t.string   "phone_number"
     t.string   "contact_email"
-    t.string   "description"
-    t.datetime "created_at"
-    t.datetime "updated_at"
+    t.text     "description"
+    t.datetime "created_at",    null: false
+    t.datetime "updated_at",    null: false
   end
 
   create_table "users", force: :cascade do |t|

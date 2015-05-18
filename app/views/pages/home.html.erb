@@ -8,8 +8,8 @@
       <div class="well">
         <h2 class="text-center">Your Profile</h2>
         <% if current_user.profile %>
-          <%= link_to "Edit your profile", edit_user_profile_path(user_id: current_user.id), class: 'btn btn-gradient btn-lg btn-block' %>
-          <%= link_to "View your profile", user_path(current_user), class: 'btn btn-gradient btn-lg btn-block' %>
+          <%= link_to "Edit your profile", edit_user_profile_path(user_id: current_user.id), class: 'btn btn-default btn-lg btn-block' %>
+          <%= link_to "View your profile", user_path(current_user), class: 'btn btn-default btn-lg btn-block' %>
         <% else %>
           <%= link_to "Create your profile!", new_user_profile_path(current_user) if current_user %>
         <% end %>
@@ -19,7 +19,7 @@
       <div class="well">
         <h2 class="text-center">The Artists</h2>
         <p class="text-center">Check out the community to meet people you can trust to get the job done.</p>
-        <%= link_to "Visit the community", users_path, class: 'btn btn-gradient btn-lg btn-block' %>
+        <%= link_to "Visit the community", users_path, class: 'btn btn-default btn-lg btn-block' %>
       </div>
     </div>
   <% else %>
@@ -28,7 +28,7 @@
         <h2 class="text-center">Basic Membership</h2>
         <h4>Free and Basic Access to the ArtParty Community</h4>
         <br />
-        <%= link_to "Basic Sign Up", new_user_registration_path(plan: @basic_plan.id), class: "btn btn-primary btn-lg btn-block" %>
+        <%= link_to "Basic Sign Up", new_user_registration_path(plan: @basic_plan.id), class: "btn btn-default btn-lg btn-block" %>
       </div>
     </div>
     <div class="col-md-6">

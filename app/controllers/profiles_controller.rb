@@ -43,5 +43,4 @@ class ProfilesController < ApplicationController
       @user = User.find( params[:user_id] )
       redirect_to(root_url) unless @user == current_user
     end
-  end
 end
